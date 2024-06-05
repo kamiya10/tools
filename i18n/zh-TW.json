@@ -1,0 +1,21 @@
+{
+  "tools": {
+    "json_formatter": {
+      "title": "JSON 格式化",
+      "button": {
+        "format": "格式化",
+        "clear": "清除"
+      }
+    },
+    "number_converter": {
+      "title": "進制轉換器",
+      "binary": "二進制",
+      "octal": "八進制",
+      "decimal": "十進制",
+      "hexadecimal": "十六進制",
+      "quadravigesimal": "二十四進制",
+      "duotrigesimal": "三十二進制",
+      "hexatrigesimal": "三十六進制"
+    }
+  }
+}

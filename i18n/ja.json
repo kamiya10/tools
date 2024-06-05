@@ -1,0 +1,21 @@
+{
+  "tools": {
+    "json_formatter": {
+      "title": "JSON フォーマッター",
+      "button": {
+        "format": "フォーマット",
+        "clear": "クリア"
+      }
+    },
+    "number_converter": {
+      "title": "進数変換ツール",
+      "binary": "二進法",
+      "octal": "八進法",
+      "decimal": "十進法",
+      "hexadecimal": "十六進法",
+      "quadravigesimal": "二十四進法",
+      "duotrigesimal": "三十二進法",
+      "hexatrigesimal": "三十六進法"
+    }
+  }
+}

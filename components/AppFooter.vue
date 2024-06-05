@@ -1,9 +1,39 @@
-<script lang="ts"></script>
+<script setup lang="ts">
+const { locale, locales, setLocale } = useI18n();
+
+const availableLocales = computed(() => {
+  return locales.value.map((i) => ({
+    label: i.name,
+    value: i.code,
+  }));
+});
+
+const changeLocale = () => {
+  setLocale(locale.value);
+};
+</script>
 
 <template>
-  <footer class="flex gap-4 items-center justify-center h-16">
-    <NuxtLink to="/tools/json-formatter">JSON Formatter</NuxtLink>
-    <NuxtLink to="/tools/number-converter">Number Converter</NuxtLink>
-    <NuxtLink to="/tools/phrase-checker">Phrase Checker</NuxtLink>
+  <footer
+    class="flex flex-col sm:flex-row gap-4 items-center justify-center h-16"
+  >
+    <div class="flex flex-col sm:flex-row items-center gap-4">
+      <NuxtLink to="/tools/json-formatter">
+        {{ $t("tools.json_formatter.title") }}
+      </NuxtLink>
+      <NuxtLink to="/tools/number-converter">
+        {{ $t("tools.number_converter.title") }}
+      </NuxtLink>
+      <NuxtLink to="/tools/phrase-checker">Phrase Checker</NuxtLink>
+    </div>
+    <div class="sm:absolute sm:right-4">
+      <Dropdown
+        v-model="locale"
+        :options="availableLocales"
+        option-label="label"
+        option-value="value"
+        @change="changeLocale"
+      />
+    </div>
   </footer>
 </template>

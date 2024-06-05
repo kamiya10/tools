@@ -1,38 +1,40 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
 useHead({
-  title: "Number Converter | Kamiya Tools",
+  title: `${t("tools.number_converter.title")} | Kamiya Tools`,
 });
 
-const options = [
+const options = computed(() => [
   {
-    label: "Binary",
+    label: t("tools.number_converter.binary"),
     value: 2,
   },
   {
-    label: "Octal",
+    label: t("tools.number_converter.octal"),
     value: 8,
   },
   {
-    label: "Decimal",
+    label: t("tools.number_converter.decimal"),
     value: 10,
   },
   {
-    label: "Hexadecimal",
+    label: t("tools.number_converter.hexadecimal"),
     value: 16,
   },
   {
-    label: "Quadravigesimal",
+    label: t("tools.number_converter.quadravigesimal"),
     value: 24,
   },
   {
-    label: "Duotrigesimal",
+    label: t("tools.number_converter.duotrigesimal"),
     value: 32,
   },
   {
-    label: "Hexatrigesimal",
+    label: t("tools.number_converter.hexatrigesimal"),
     value: 36,
   },
-];
+]);
 
 const from = ref(10);
 const to = ref(2);
@@ -103,7 +105,7 @@ const updateTo = () => {
 <template>
   <div class="flex flex-col gap-4 p-8">
     <h1 class="text-2xl font-bold text-primary text-center py-2">
-      Number Converter
+      {{ $t("tools.number_converter.title") }}
     </h1>
     <div class="flex flex-col sm:flex-row justify-center gap-4">
       <div class="flex flex-col gap-2">

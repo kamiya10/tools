@@ -4,6 +4,7 @@ body {
   width: 100svw;
   margin: 0;
   background-color: rgb(var(--surface-0));
+  font-family: "Inter", sans-serif;
   user-select: none;
 }
 

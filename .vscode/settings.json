@@ -1,8 +1,13 @@
 {
   "files.associations": {
-      "*.css": "tailwindcss"
+    "*.css": "tailwindcss"
   },
   "editor.quickSuggestions": {
-      "strings": true
-  }
+    "strings": true
+  },
+  "i18n-ally.localesPaths": [
+    "i18n"
+  ],
+  "i18n-ally.keystyle": "nested",
+  
 }

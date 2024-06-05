@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import type { editor as monaco } from "monaco-editor";
 
+const { locale, t } = useI18n();
+
 useHead({
-  title: "JSON Formatter | Kamiya Tools",
+  title: `${t("tools.json_formatter.title")} | Kamiya Tools`,
 });
 
 const code = ref("");
@@ -30,11 +32,11 @@ const onEditorLoad = (e: monaco.IStandaloneCodeEditor) => {
 <template>
   <div class="flex flex-col flex-[1] gap-4 p-8">
     <h1 class="text-2xl font-bold text-primary text-center py-2">
-      JSON Formatter
+      {{ $t("tools.json_formatter.title") }}
     </h1>
     <div class="flex gap-4">
       <Button
-        label="Format"
+        :label="$t('tools.json_formatter.button.format')"
         class="gap-2"
         :disabled="!isEditorReady"
         @click="format"
@@ -44,7 +46,7 @@ const onEditorLoad = (e: monaco.IStandaloneCodeEditor) => {
         </template>
       </Button>
       <Button
-        label="Clear"
+        :label="$t('tools.json_formatter.button.clear')"
         severity="danger"
         class="gap-2"
         :disabled="!isEditorReady"
@@ -60,6 +62,7 @@ const onEditorLoad = (e: monaco.IStandaloneCodeEditor) => {
       lang="json"
       class="flex-[1] rounded-lg overflow-hidden"
       :options="{
+        language: locale.toLowerCase(),
         theme: 'vs-dark',
         smoothScrolling: true,
         minimap: { enabled: false },

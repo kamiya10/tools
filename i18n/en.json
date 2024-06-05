@@ -1,0 +1,21 @@
+{
+  "tools": {
+    "json_formatter": {
+      "title": "JSON Formatter",
+      "button": {
+        "format": "Format",
+        "clear": "Clear"
+      }
+    },
+    "number_converter": {
+      "title": "Number Converter",
+      "binary": "Binary",
+      "octal": "Octal",
+      "decimal": "Decimal",
+      "hexadecimal": "Hexadecimal",
+      "quadravigesimal": "Quadravigesimal",
+      "duotrigesimal": "Duotrigesimal",
+      "hexatrigesimal": "Hexatrigesimal"
+    }
+  }
+}
