@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     "nuxt-monaco-editor",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots"
   ],
   app: {
     head: {
@@ -49,14 +50,17 @@ export default defineNuxtConfig({
     locales: [
       {
         code: "en",
+        iso: "en-US",
         name: "English",
       },
       {
         code: "ja",
+        iso: "ja-JP",
         name: "日本語",
       },
       {
-        code: "zh-TW",
+        code: "tw",
+        iso: "zh-TW",
         name: "繁體中文",
       },
     ],
@@ -70,6 +74,13 @@ export default defineNuxtConfig({
       from: "@/presets/aura",
       as: "Aura",
     },
+  },
+  robots: {
+    rules: [
+      { UserAgent: '*' },
+      { BlankLine: true },
+      { Sitemap: "https://kamiya.app/sitemap.xml" },
+    ],
   },
   site: {
     url: 'https://kamiya.app',
