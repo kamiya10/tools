@@ -1,0 +1,1 @@
+<template>main index</template>
