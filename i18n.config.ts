@@ -5,6 +5,7 @@ import zhTW from "@/i18n/zh-TW.json";
 export default defineI18nConfig(() => ({
   legacy: false,
   availableLocales: ["en", "zh-TW"],
+  fallbackLocale: "en",
   messages: {
     en,
     ja,
