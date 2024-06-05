@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: "Number Converter | Kamiya Tools",
+});
+
 const options = [
   {
     label: "Binary",

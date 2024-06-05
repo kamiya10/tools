@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import type { editor as monaco } from "monaco-editor";
 
+useHead({
+  title: "JSON Formatter | Kamiya Tools",
+});
+
 const code = ref("");
 const isEditorReady = ref(false);
 let editor: monaco.IStandaloneCodeEditor;
