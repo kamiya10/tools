@@ -4,4 +4,5 @@
     <slot />
   </main>
   <AppFooter />
+  <SpeedInsights />
 </template>
