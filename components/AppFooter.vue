@@ -18,13 +18,13 @@ const changeLocale = () => {
     class="flex flex-col sm:flex-row gap-4 items-center justify-center h-16"
   >
     <div class="flex flex-col sm:flex-row items-center gap-4">
-      <NuxtLink to="/tools/json-formatter">
+      <NuxtLink to="/tools/json-formatter" noPrefetch>
         {{ $t("tools.json_formatter.title") }}
       </NuxtLink>
-      <NuxtLink to="/tools/number-converter">
+      <NuxtLink to="/tools/number-converter" noPrefetch>
         {{ $t("tools.number_converter.title") }}
       </NuxtLink>
-      <NuxtLink to="/tools/phrase-checker">Phrase Checker</NuxtLink>
+      <NuxtLink to="/tools/phrase-checker" noPrefetch>Phrase Checker</NuxtLink>
     </div>
     <div class="sm:absolute sm:right-4">
       <Dropdown

@@ -1,3 +1,5 @@
 <script lang="ts"></script>
 
-<template></template>
+<template>
+  <header></header>
+</template>

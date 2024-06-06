@@ -42,7 +42,7 @@ const onEditorLoad = (e: monaco.IStandaloneCodeEditor) => {
         @click="format"
       >
         <template #icon>
-          <MaterialSymbol icon="format_paint" />
+          <MaterialSymbol :icon="`\ue243`" />
         </template>
       </Button>
       <Button
@@ -53,7 +53,7 @@ const onEditorLoad = (e: monaco.IStandaloneCodeEditor) => {
         @click="clear"
       >
         <template #icon>
-          <MaterialSymbol icon="delete" />
+          <MaterialSymbol :icon="`\ue872`" />
         </template>
       </Button>
     </div>

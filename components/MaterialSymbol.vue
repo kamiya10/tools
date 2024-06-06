@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import type { MaterialSymbol } from "material-symbols";
-
 withDefaults(
   defineProps<{
-    icon: MaterialSymbol;
+    icon: string;
     size?: number;
   }>(),
   {

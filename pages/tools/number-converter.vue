@@ -139,10 +139,7 @@ const updateTo = () => {
         />
       </div>
       <div class="flex flex-col items-center justify-center">
-        <MaterialSymbol
-          class="sm:-rotate-90 text-primary"
-          icon="arrow_downward_alt"
-        />
+        <MaterialSymbol class="sm:-rotate-90 text-primary" :icon="`\ue984`" />
       </div>
       <div class="flex flex-col gap-2">
         <div class="grid grid-cols-[3fr_auto_1fr] gap-2 items-center">
