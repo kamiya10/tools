@@ -110,66 +110,26 @@ const updateTo = () => {
     <div class="flex flex-col sm:flex-row justify-center gap-4">
       <div class="flex flex-col gap-2">
         <div class="grid grid-cols-[3fr_auto_1fr] gap-2 items-center">
-          <Dropdown
-            v-model="from"
-            :options="options"
-            option-label="label"
-            option-value="value"
-            placeholder="Custom"
-            @change="updateTo"
-          />
+          <Select v-model="from" :options="options" option-label="label" option-value="value" placeholder="Custom"
+            @change="updateTo" />
           <div class="text-surface-700 dark:text-white/60">Base</div>
-          <InputNumber
-            v-model="from"
-            input-class="w-8 text-right"
-            :min="2"
-            :max="36"
-            @update:modelValue="updateTo"
-          />
+          <InputNumber v-model="from" input-class="w-8 text-right" :min="2" :max="36" @update:modelValue="updateTo" />
         </div>
-        <Textarea
-          v-model="fromValue"
-          class="text-lg tabular-nums"
-          autoResize
-          :rows="5"
-          :cols="28"
-          :invalid="isFromValueInvalid"
-          :inputmode="from < 11 ? 'numeric' : undefined"
-          @input="updateTo"
-        />
+        <Textarea v-model="fromValue" class="text-lg tabular-nums" autoResize :rows="5" :cols="28"
+          :invalid="isFromValueInvalid" :inputmode="from < 11 ? 'numeric' : undefined" @input="updateTo" />
       </div>
       <div class="flex flex-col items-center justify-center">
         <MaterialSymbol class="sm:-rotate-90 text-primary" :icon="`\ue984`" />
       </div>
       <div class="flex flex-col gap-2">
         <div class="grid grid-cols-[3fr_auto_1fr] gap-2 items-center">
-          <Dropdown
-            v-model="to"
-            :options="options"
-            option-label="label"
-            option-value="value"
-            placeholder="Custom"
-            @change="updateTo"
-          />
+          <Select v-model="to" :options="options" option-label="label" option-value="value" placeholder="Custom"
+            @change="updateTo" />
           <div class="text-surface-700 dark:text-white/60">Base</div>
-          <InputNumber
-            v-model="to"
-            input-class="w-8 text-right"
-            :min="2"
-            :max="36"
-            @update:modelValue="updateTo"
-          />
+          <InputNumber v-model="to" input-class="w-8 text-right" :min="2" :max="36" @update:modelValue="updateTo" />
         </div>
-        <Textarea
-          v-model="toValue"
-          class="text-lg tabular-nums"
-          autoResize
-          :rows="5"
-          :cols="28"
-          :invalid="isToValueInvalid"
-          :inputmode="to < 11 ? 'numeric' : undefined"
-          @input="updateFrom"
-        />
+        <Textarea v-model="toValue" class="text-lg tabular-nums" autoResize :rows="5" :cols="28"
+          :invalid="isToValueInvalid" :inputmode="to < 11 ? 'numeric' : undefined" @input="updateFrom" />
       </div>
     </div>
   </div>
