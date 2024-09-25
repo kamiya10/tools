@@ -16,6 +16,9 @@
       "quadravigesimal": "Quadravigesimal",
       "duotrigesimal": "Duotrigesimal",
       "hexatrigesimal": "Hexatrigesimal"
+    },
+    "random_color": {
+      "title": "Random Color"
     }
   }
 }

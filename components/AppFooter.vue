@@ -23,6 +23,7 @@ const changeLocale = () => {
         {{ $t("tools.number_converter.title") }}
       </NuxtLink>
       <NuxtLink to="/tools/phrase-checker" noPrefetch>Phrase Checker</NuxtLink>
+      <NuxtLink to="/tools/color" noPrefetch>{{ $t("tools.random_color.title") }}</NuxtLink>
     </div>
     <div class="sm:absolute sm:right-4">
       <Select v-model="locale" :options="availableLocales" option-label="label" option-value="value"
