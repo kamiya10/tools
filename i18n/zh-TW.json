@@ -16,6 +16,9 @@
       "quadravigesimal": "二十四進制",
       "duotrigesimal": "三十二進制",
       "hexatrigesimal": "三十六進制"
+    },
+    "random_color": {
+      "title": "隨機顏色"
     }
   }
 }

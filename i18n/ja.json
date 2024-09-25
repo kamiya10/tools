@@ -16,6 +16,9 @@
       "quadravigesimal": "二十四進法",
       "duotrigesimal": "三十二進法",
       "hexatrigesimal": "三十六進法"
+    },
+    "random_color": {
+      "title": "Random Color"
     }
   }
 }

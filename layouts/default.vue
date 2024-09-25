@@ -9,14 +9,12 @@ const head = useLocaleHead({
 </script>
 
 <template>
-  <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
-    <Body>
-      <AppHeader />
-      <main class="flex flex-col flex-1">
-        <slot />
-      </main>
-      <AppFooter />
-      <SpeedInsights />
-    </Body>
-  </Html>
+  <div class="flex flex-col min-h-svh">
+    <AppHeader />
+    <main class="flex flex-col flex-1">
+      <slot />
+    </main>
+    <AppFooter />
+  </div>
+  <SpeedInsights />
 </template>
