@@ -59,3 +59,7 @@
 .typeWindows_a934d8 .winButton_a934d8.winButtonClose_a934d8:after {
   background-color: var(--app-button-close);
 }
+
+.sidebar_c25c6d {
+  padding: 0 0 40px;
+}
