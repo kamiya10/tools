@@ -7,7 +7,7 @@
 }
 
 .typeWindows_a934d8:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -61,9 +61,9 @@
 }
 
 .sidebar_c25c6d {
-  padding: 0 0 40px;
+  padding: 72px 0 40px 0;
 }
 
-.sidebar_c25c6d .side_a0 > div:not([class])[style="margin-bottom: 8px;"] {
+.sidebar_c25c6d .side_a0 > div:not([class])[style='margin-bottom: 8px;'] {
   top: 0;
 }
