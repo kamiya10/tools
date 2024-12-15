@@ -63,3 +63,7 @@
 .sidebar_c25c6d {
   padding: 0 0 40px;
 }
+
+.sidebar_c25c6d .side_a0 > div:not([class])[style="margin-bottom: 8px;"] {
+  top: 0;
+}
