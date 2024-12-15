@@ -1,0 +1,141 @@
+/* personal vencord stylesheet */
+
+@import url(https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/_res/SettingsIcons.css);
+@import url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css);
+@import url(https://kamiya.app/vencord/mac_traffic_lights.css);
+
+:root {
+  --bg-url: url(https://i.imgur.com/nuAMeMq.jpeg);
+
+  --accent-hue: 13deg;
+  --accent-saturation: 100%;
+  --accent-lightness: 81%;
+  --accent-text-color: var(--md-on-primary);
+
+  --alert-hue: 6deg;
+  --alert-saturation: 100%;
+  --alert-lightness: 84%;
+  --alert-text-color: var(--md-on-error);
+}
+
+.theme-dark {
+  --md-primary: rgb(255 181 160);
+  --md-surface-tint: rgb(255 181 160);
+  --md-on-primary: rgb(86 31 15);
+  --md-primary-container: rgb(114 53 35);
+  --md-on-primary-container: rgb(255 219 209);
+  --md-secondary: rgb(231 189 178);
+  --md-on-secondary: rgb(68 42 34);
+  --md-secondary-container: rgb(93 64 55);
+  --md-on-secondary-container: rgb(255 219 209);
+  --md-tertiary: rgb(216 197 141);
+  --md-on-tertiary: rgb(59 47 5);
+  --md-tertiary-container: rgb(83 70 25);
+  --md-on-tertiary-container: rgb(245 225 167);
+  --md-error: rgb(255 180 171);
+  --md-on-error: rgb(105 0 5);
+  --md-error-container: rgb(147 0 10);
+  --md-on-error-container: rgb(255 218 214);
+  --md-background: rgb(26 17 15);
+  --md-on-background: rgb(241 223 218);
+  --md-surface: rgb(26 17 15);
+  --md-on-surface: rgb(241 223 218);
+  --md-surface-variant: rgb(83 67 63);
+  --md-on-surface-variant: rgb(216 194 188);
+  --md-outline: rgb(160 140 135);
+  --md-outline-variant: rgb(83 67 63);
+  --md-shadow: rgb(0 0 0);
+  --md-scrim: rgb(0 0 0);
+  --md-inverse-surface: rgb(241 223 218);
+  --md-inverse-on-surface: rgb(57 46 43);
+  --md-inverse-primary: rgb(143 76 56);
+  --md-primary-fixed: rgb(255 219 209);
+  --md-on-primary-fixed: rgb(58 11 1);
+  --md-primary-fixed-dim: rgb(255 181 160);
+  --md-on-primary-fixed-variant: rgb(114 53 35);
+  --md-secondary-fixed: rgb(255 219 209);
+  --md-on-secondary-fixed: rgb(44 21 15);
+  --md-secondary-fixed-dim: rgb(231 189 178);
+  --md-on-secondary-fixed-variant: rgb(93 64 55);
+  --md-tertiary-fixed: rgb(245 225 167);
+  --md-on-tertiary-fixed: rgb(35 27 0);
+  --md-tertiary-fixed-dim: rgb(216 197 141);
+  --md-on-tertiary-fixed-variant: rgb(83 70 25);
+  --md-surface-dim: rgb(26 17 15);
+  --md-surface-bright: rgb(66 55 52);
+  --md-surface-container-lowest: rgb(20 12 10);
+  --md-surface-container-low: rgb(35 25 23);
+  --md-surface-container: rgb(39 29 27);
+  --md-surface-container-high: rgb(50 40 37);
+  --md-surface-container-highest: rgb(61 50 47);
+}
+
+.theme-dark {
+  --main-color: var(--md-background);
+  --main-alt: var(--md-background);
+
+  --sidebar-panel-color: var(--md-surface-container-high);
+  --status-picker-color: var(--md-surface-container-highest);
+  --tooltip-color: var(--md-inverse-surface);
+  --tooltip-text-color: var(--md-inverse-on-surface);
+
+  --message-color: var(--md-surface-container);
+  --message-color-hover: var(--md-surface-container-high);
+
+  --popout-color: var(--md-surface-container-high);
+  --popout-color-alt: var(--md-surface-bright);
+  --popout-header-border: var(--md-outline-variant);
+  --separator-color: var(--md-outline-variant);
+
+  --card-color-filled: var(--md-surface-container);
+  --card-color-hover: var(--md-surface-container-high);
+  --card-color-active: var(--md-surface-container-highest);
+  --card-color-alt: var(--md-surface-container-highest);
+  --card-color-alt-hover: var(--md-surface-bright);
+  --card-border-color: var(--md-outline-variant);
+  --card-header-text-color: var(--md-on-surface);
+
+  --input-color: var(--md-surface-container-high);
+  --input-color-alt: var(--md-surface-container-highest);
+  --input-border-color: var(--md-outline-variant);
+  --input-text-color: var(--md-on-surface);
+  --input-placeholder-color: var(--md-on-surface-variant);
+
+  --channel-icon: var(--md-outline);
+  --channels-default: var(--md-outline);
+  --text-muted: var(--md-outline);
+  --text-normal: var(--md-on-surface);
+  --menu-item-text-color: var(--md-on-surface-variant);
+  --interactive-normal: var(--md-on-surface-variant);
+}
+
+.lookFilled_dd4f85.colorPrimary_dd4f85 {
+  --button-background: var(--md-secondary-container);
+  --button-text-color: var(--md-on-secondary-container);
+}
+
+.lookOutlined_dd4f85.colorRed_dd4f85 {
+  --button-outline: 1px solid var(--md-error);
+  --button-text-color: var(--md-error);
+}
+
+.text_a5ad5c {
+  color: var(--md-on-surface-variant);
+}
+
+.input_f8bc55:focus {
+  background-color: var(--md-surface-container-highest);
+}
+
+body::before {
+  position: fixed;
+  content: '';
+  background: var(--bg-url) no-repeat 0 0 / cover;
+  inset: 0;
+  transform: translate3d(0, 0, 0);
+  pointer-events: none;
+  opacity: 0.25;
+  filter: blur(16px);
+  mix-blend-mode: soft-light;
+  z-index: 1001;
+}
