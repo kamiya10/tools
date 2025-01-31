@@ -1,4 +1,4 @@
-.typeWindows_a934d8 {
+.typeWindows__421ed {
   position: absolute;
   gap: 2px;
   width: 72px;
@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.typeWindows_a934d8:before {
+.typeWindows__421ed:before {
   content: '';
   position: absolute;
   left: 0;
@@ -16,54 +16,54 @@
   -webkit-app-region: drag;
 }
 
-.wordmarkWindows_a934d8 {
+.wordmark__421ed.wordmarkWindows__421ed {
   display: none;
 }
 
-.typeWindows_a934d8 + .appAsidePanelWrapper_bd26cc .guilds_a4d4d9 {
+.typeWindows__421ed + .appAsidePanelWrapper_a3002d .guilds_c48ade {
   padding-top: 32px;
 }
 
-.typeWindows_a934d8 .winButton_a934d8 {
+.typeWindows__421ed .winButton__421ed {
   height: 16px;
   width: 16px;
   scale: 0.75;
 }
 
-.typeWindows_a934d8 .winButtonClose_a934d8 {
+.typeWindows__421ed .winButtonClose__421ed {
   order: 3;
 }
 
-.typeWindows_a934d8 .winButtonMinMax_a934d8:nth-last-of-type(1) {
+.typeWindows__421ed .winButtonMinMax__421ed:nth-last-of-type(1) {
   order: 2;
 }
 
-.typeWindows_a934d8 .winButtonMinMax_a934d8:nth-last-of-type(2) {
+.typeWindows__421ed .winButtonMinMax__421ed:nth-last-of-type(2) {
   order: 1;
 }
 
-.typeWindows_a934d8:hover .winButton_a934d8:before {
+.typeWindows__421ed:hover .winButton__421ed:before {
   opacity: 1;
 }
 
-.typeWindows_a934d8
-  .winButton_a934d8.winButtonMinMax_a934d8:nth-last-of-type(1):after {
+.typeWindows__421ed
+  .winButton__421ed.winButtonMinMax__421ed:nth-last-of-type(1):after {
   background-color: var(--app-button-min);
 }
 
-.typeWindows_a934d8
-  .winButton_a934d8.winButtonMinMax_a934d8:nth-last-of-type(2):after {
+.typeWindows__421ed
+  .winButton__421ed.winButtonMinMax__421ed:nth-last-of-type(2):after {
   background-color: var(--app-button-max);
 }
 
-.typeWindows_a934d8 .winButton_a934d8.winButtonClose_a934d8:after {
+.typeWindows__421ed .winButton__421ed.winButtonClose__421ed:after {
   background-color: var(--app-button-close);
 }
 
-.sidebar_c25c6d {
+.sidebar__23e6b {
   padding: 72px 0 40px 0;
 }
 
-.sidebar_c25c6d .side_a0 > div:not([class])[style='margin-bottom: 8px;'] {
+.sidebar__23e6b .side_b3f026 > div:not([class])[style='margin-bottom: 8px;'] {
   top: 0;
 }
